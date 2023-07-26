@@ -4,17 +4,24 @@ package com.cc.java;
 public class App {
     
     public static void main(String[] args) {
-        Konto konto = new Konto(100);
-        int kontostand = konto.getKontostand();
-        String kontoAlsText = Integer.toString(kontostand);
+        Konto konto1 = new Konto();
+        Konto konto2 = new Konto();
+        Konto konto3 = new Konto();
 
-        output(kontoAlsText);
-
-        konto.setKontostand(5000);
-        kontostand = konto.getKontostand();
-        kontoAlsText = Integer.toString(kontostand);
+        System.out.println(konto1.getKontostand());
+        System.out.println(konto2.getKontostand());
+        System.out.println(konto3.getKontostand());
         
-        output(kontoAlsText);
+        System.out.println("------------------------");
+
+        konto1.setKontostand(konto1.getKontostand() * 2);
+        konto2.setKontostand(konto2.getKontostand() * 3);
+        konto3.setKontostand(konto3.getKontostand() * 10);
+
+        System.out.println(konto1.getKontostand());
+        System.out.println(konto2.getKontostand());
+        System.out.println(konto3.getKontostand());
+
     }
 
 

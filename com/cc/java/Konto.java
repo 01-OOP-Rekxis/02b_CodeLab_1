@@ -4,8 +4,8 @@ public class Konto {
 
     private int kontostand;
 
-    public Konto(int initialerKontostand) {
-        this.kontostand = initialerKontostand;
+    public Konto() {
+        kontostand = 10000;
     }
 
     public int getKontostand() {
