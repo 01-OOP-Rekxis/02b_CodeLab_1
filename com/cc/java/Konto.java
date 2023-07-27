@@ -12,8 +12,8 @@ public class Konto {
         return kontostand;
     }
 
-    public void setKontostand(int neuerKontostand) {
-        kontostand = neuerKontostand;
+    public void setKontostand(int kontostand) {
+        this.kontostand = kontostand;
     }
 
 }

@@ -11,7 +11,7 @@ public class App {
         output(konto2.getKontostand());
         output(konto3.getKontostand());
 
-        System.out.println("------------------------");
+        output("------------------------");
 
         konto1.setKontostand(konto1.getKontostand() * 2);
         konto2.setKontostand(konto2.getKontostand() * 3);
@@ -23,10 +23,10 @@ public class App {
 
     }
 
-    // private static void output(String outputStr) {
-    //     System.out.println(outputStr);
-    // }
-
+    private static void output(String outputStr) {
+        System.out.println(outputStr);
+    }
+    
     private static void output(int outputInt) {
         System.out.println(outputInt);
     }
